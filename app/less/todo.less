@@ -1,0 +1,105 @@
+.panel-wrap {
+    width: 1200px;
+    margin: 50px auto;
+    .panel-default {
+        background-color: #FFF7DE;
+        border: 0;
+    }
+    h1 {
+        font-size: 26px;
+        text-align: center;
+        padding: 20px 0;
+    }
+    h2 {
+        font-size: 22px;
+        padding: 15px 50px;
+        position: relative;
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 12px;
+            height: 20px;
+            border-top: 2px solid #666;
+            border-bottom: 2px solid #666;
+            position: absolute;
+            left: 30px;
+            top: 16px;
+        }
+        &:after {
+            content: '';
+            display: inline-block;
+            width: 12px;
+            height: 2px;
+            background-color: #666;
+            position: absolute;
+            left: 30px;
+            top: 25px;
+        }
+    }
+    .new-input {
+        width: 80%;
+        display: inline-block;
+        margin: 30px 25px 30px 60px;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        height: 45px;
+    }
+    .new-btn {
+        display: inline-block;
+        background-color: #333;
+        border-color: #333;
+        outline-color: #333;
+        &:focus {
+            background-color: #333;
+            border-color: #333;
+            outline-color: #333;
+        }
+    }
+    .list {
+        padding: 0 30px;
+        li {
+            margin: 10px;
+            padding: 10px;
+        }
+        span {
+            display: inline-block;
+            width: 960px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, .075);
+        }
+        .btn {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            line-height: 16px;
+            font-family: "Helvetica";
+            background-color: transparent;
+            font-size: 20px;
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+        .btn-remove {
+            margin: 0 20px;
+            color: #278158;
+        }
+        .btn-delete {
+            color: #D84C29;
+        }
+    }
+    .toDo-list {
+        span {
+            background-color: #fff;
+            color: #333;
+        }
+    }
+    .done-list {
+        span {
+            background-color: #666;
+            color: #fff;
+        }
+    }
+}
